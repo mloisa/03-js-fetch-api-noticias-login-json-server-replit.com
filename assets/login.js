@@ -1,8 +1,13 @@
-function verificarCredenciais() {
+async function verificarCredenciais() {
     const emailInformado = document.getElementById("email").value;
     const senhaInformada = document.getElementById("senha").value;
 
-    let usuario = lerUsuario(emailInformado);
+    let usuario = await lerUsuario(emailInformado);
+    
+    if (!usuario) {
+        alert("E-mail informado incorretamente!");
+        return;
+    }
 
     if (emailInformado === usuario.email) {
         // alert("E-mail informado corretamente!");
@@ -22,9 +27,9 @@ async function lerUsuario(email) {
 
     await fetch(url)
         .then(response => response.json())
-        .then(json => {
-            usuario = { json.email, json.senha }
-        })
+        .then(json => 
+            usuario = { "email": json[0].email, "senha": json[0].senha }
+        )
         .catch(error => console.error(error))
 
     return usuario;

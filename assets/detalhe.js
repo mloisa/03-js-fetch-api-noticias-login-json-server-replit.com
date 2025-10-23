@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 //GET:
 const buscarNoticia = async (id) => {
-    const replit = 'https://7e05163a-d017-46f9-9c6d-9b54636fc02d-00-13ilh843ckczq.worf.replit.dev/'; // URL do projeto no Replit.com.
+    const replit = 'https://40c62aeb-526c-4b4b-810d-54f532c9ceb8-00-xbbxy1ovs6lf.worf.replit.dev/'; // URL do projeto no Replit.com.
     const url = replit + "noticias/" + id;
 
     await fetch(url)

@@ -29,7 +29,7 @@ const apresentarDetalhesDaNoticia = () => {
               <p>${noticia.autor}</p>
               <img class="painel-img" src="${noticia.imagem}" alt="${noticia.titulo}">
               <p>${noticia.conteudo}</p>
-              <a href="index.html">
+              <a href="home.html">
                 <p class="botao-cartao">
                   Voltar  
                 </p>

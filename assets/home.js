@@ -14,7 +14,7 @@ async function alternarApresentacaoDasNoticias() {
 
 //GET:
 const buscarNoticias = async () => {
-    const replit = 'https://40c62aeb-526c-4b4b-810d-54f532c9ceb8-00-xbbxy1ovs6lf.worf.replit.dev/'; // URL do projeto no Replit.com.
+    const replit = 'https://22f66d55-d5ba-493c-a6b4-20dbf42c35db-00-yev5hgdqpo2k.spock.replit.dev/'; // URL do projeto no Replit.com.
     const url = replit + "noticias";
 
     await fetch(url)

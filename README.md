@@ -59,6 +59,6 @@ json-server --watch db/db.json --port 3000
 
 1) Criar a página de cadastro de usuário, usando a `API Fetch`.
 
-2) Alterar a função `lerUsuario()`, para que ela seja executada com o verbo `POST` do protocolo `HTTP`.
+2) Alterar a função `lerUsuario()`, para que ela seja executada com o verbo `GET` do protocolo `HTTP` sem __query string__.
 
 3) Aplicar estilos `CSS` nas páginas de login e cadastro de usuário.
